@@ -38,6 +38,12 @@ Exemple:
 
 def descending_list_iterator(numbers_list):
     # Write here your code
+    lista = list(numbers_list)
+    for i in range(len(lista)):
+        for j in range(i + 1, len(lista)):
+            if lista[j] > lista[i]:
+                lista[i], lista[j] = lista[j], lista[i]
+    return lista
     pass
 
 
