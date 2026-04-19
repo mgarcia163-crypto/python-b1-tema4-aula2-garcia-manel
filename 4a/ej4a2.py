@@ -45,7 +45,14 @@ Exemple:
 
 def count_fruits(fruits_list):
     # Write here your code
-    pass
+    resultado = {}
+    for fruta in fruits_list:
+        if fruta in resultado:
+            resultado[fruta] += 1
+        else:
+            resultado [fruta] = 1
+    return resultado
+
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
