@@ -49,22 +49,23 @@ from abc import ABC, abstractmethod
 
 # Write abstract class Vehicles here 
 class Vehicles():
+    @abstractmethod
     def drive(self):
         # Write here your code
         pass
 
 # Corret and overwrite class Car(Vehicles) here 
-class Car():
+class Car(Vehicles):
     def drive(self):
+        return (f"Driving a car")
         # Write here your code
-        pass
+        
 
 # Corret and overwrite class Bicycle(Vehicles) here 
 class Bicycle():
     def drive(self):
         # Write here your code
-        pass
-
+        return (f"Riding a bicycle")
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
