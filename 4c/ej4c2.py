@@ -48,7 +48,7 @@ Exemple:
 from abc import ABC, abstractmethod
 
 # Write abstract class Vehicles here 
-class Vehicles():
+class Vehicles(ABC):
     @abstractmethod
     def drive(self):
         # Write here your code
@@ -62,7 +62,7 @@ class Car(Vehicles):
         
 
 # Corret and overwrite class Bicycle(Vehicles) here 
-class Bicycle():
+class Bicycle(Vehicles):
     def drive(self):
         # Write here your code
         return (f"Riding a bicycle")
