@@ -93,7 +93,7 @@ class Person:
     # Method that returns the description of the person
     def describe(self):
         # Write here your code
-        print(f"{self.name} is {self.age} years old.")
+        return(f"{self.name} is {self.age} years old.")
 
 
 # Class that represents a student
@@ -108,7 +108,7 @@ class Student(Person):
     def describe(self):
         # Write here your code
         parent_description = super().describe()
-        print(f"{description} Studies {self.major}.")
+        return(f"{parent_description} Studies {self.major}.")
 
 
 person_1 = Person("Juan", 30)
