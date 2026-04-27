@@ -84,7 +84,7 @@ def create_list(length_list):
 
     # Write here your code
      
-    if length_list <= 1:
+    if length_list < 1:
         raise ValueError("The number must be positive")
     ram_list = []
     for _ in range (length_list):
